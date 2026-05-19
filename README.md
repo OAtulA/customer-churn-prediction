@@ -74,14 +74,14 @@ The dataset contains customer demographic information, account details, subscrib
 
 ### 1. Data Understanding
 
-- Examine dataset structure and feature distributions.
-- Identifie missing values and data quality issues.
+- Examined dataset structure and feature distributions.
+- Identified missing values and data quality issues.
 
 ### 2. Data Cleaning & Preprocessing
 
-- Handle missing and inconsistent values.
-- Convert categorical variables into numerical representations.
-- Scale numerical features where required.
+- Handled missing and inconsistent values.
+- Converted categorical variables into numerical representations.
+- Scaled numerical features where required.
 
 ### 3. Exploratory Data Analysis (EDA)
 
@@ -92,16 +92,16 @@ The dataset contains customer demographic information, account details, subscrib
 
 ### 4. Handling Class Imbalance
 
-- Apply SMOTE (Synthetic Minority Oversampling Technique) to balance the dataset.
+- Applied SMOTE (Synthetic Minority Oversampling Technique) to balance the dataset.
 
 ### 5. Feature Engineering
 
-- Encode categorical variables.
-- Selecte relevant features for model training.
+- Encoded categorical variables.
+- Selected relevant features for model training.
 
 ### 6. Model Building
 
-Traine and evaluate 6 classification models:
+Trained and evaluated 6 classification models:
 
 - Logistic Regression
 - K-Nearest Neighbors
@@ -112,11 +112,11 @@ Traine and evaluate 6 classification models:
 
 ### 7. Hyperparameter Tuning
 
-- Optimize model performance using parameter tuning techniques.
+- Optimized model performance using parameter tuning techniques.
 
 ### 8. Model Evaluation
 
-Evaluate models using:
+Evaluated models using:
 
 - Accuracy
 - Precision
@@ -125,6 +125,100 @@ Evaluate models using:
 - Confusion Matrix
 
 ---
+
+## Results
+
+### Best Performing Model
+
+- Random Forest Classifier
+
+### Performance
+
+- Achieved approximately **86% accuracy** on the test dataset after hyperparameter tuning.
+
+---
+
+## Key Insights
+
+- Customer tenure is one of the strongest predictors of churn.
+- Customers on month-to-month contracts are significantly more likely to churn.
+- Customers with longer-term contracts show higher retention rates.
+- Availability of technical support and online security services positively impacts customer retention.
+- Ensemble learning models outperform individual classifiers for this dataset.
+
+---
+
+## Business Recommendations
+
+### Improve Early Customer Experience
+
+Most churn occurs during the initial months of service. Enhancing onboarding, customer support, and issue resolution can improve retention.
+
+### Encourage Long-Term Contracts
+
+Providing incentives for annual or multi-year plans can reduce churn rates.
+
+### Promote Support Services
+
+Customers using technical support and security-related services tend to remain with the company longer.
+
+---
+
+## Dashboards
+
+### Executive Summary
+
+![Executive Summary](Dashboard-images/executive-summary.png)
+
+### Churn Analysis
+
+![Churn Analysis](Dashboard-images/churn-analysis.png)
+
+### ML Prediction Dashboard
+
+![ML Prediction Dashboard](Dashboard-images/ml-prediction-dashboard.png)
+
+---
+
+## Model Performance Screenshots
+
+### Model Performance Accuracy
+
+![Model Performance Accuracy](Screenshots/Model_Performance_Accuracy.png)
+
+### Mutual Information Plot
+
+![Mutual Information Plot](Screenshots/Mutual_information_plot.png)
+
+---
+
+## Repository Structure
+
+```text
+├── Dataset/
+│   ├── LP2_Telco_churn_first_3000.csv
+│   ├── LP2_Telco-churn-last-2000.csv
+│   ├── Telco-churn-second-2000.csv
+│   ├── Train_Data.csv
+│   ├── Test_Data.csv
+│   └── predictions.csv
+├── Toolkit/
+│   ├── ChurnPredictor.joblib
+│   └── Random Forest Classifier.joblib
+├── Dashboard-images/
+│   ├── churn-analysis.png
+│   ├── executive-summary.png
+│   └── ml-prediction-dashboard.png
+├── Screenshots/
+│   ├── Model_Performance_Accuracy.png
+│   └── Mutual_information_plot.png
+├── .gitignore
+├── Project_notebook.ipynb
+├── churn-prediction.pbix
+├── powerbi_churn_predictions.csv
+├── requirements.txt
+└── README.md
+```
 
 ## How to Run
 
@@ -168,3 +262,29 @@ jupyter notebook
 ```
 
 ---
+
+## Learning Outcomes
+
+Through this project, I gained hands-on experience in:
+
+- Data Cleaning
+- Exploratory Data Analysis
+- Feature Engineering
+- Handling Imbalanced Datasets
+- Classification Algorithms
+- Model Evaluation
+- Hyperparameter Tuning
+- Business-Oriented Data Interpretation
+
+---
+
+## Project Summary
+
+Built an end-to-end machine learning pipeline to predict telecom customer churn using customer demographics, service usage, and billing information.
+
+**Key Results:**
+
+- Trained and compared 6 classification models
+- Applied SMOTE to address class imbalance
+- Performed feature engineering and hyperparameter tuning
+- Achieved ~86% accuracy using Random Forest Classifier
