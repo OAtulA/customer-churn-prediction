@@ -28,6 +28,7 @@ Customer churn directly impacts revenue and growth. By analyzing customer demogr
 
 ![Python](https://img.shields.io/badge/Python-3.13-blue)
 ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML-orange)
+![Streamlit](https://img.shields.io/badge/Streamlit-Web%20App-FF4B4B)
 ![XGBoost](https://img.shields.io/badge/XGBoost-Classifier-green)
 ![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange)
 ![Machine Learning](https://img.shields.io/badge/ML-Classification-red)
@@ -41,6 +42,7 @@ Customer churn directly impacts revenue and growth. By analyzing customer demogr
 - SciPy, StatsModels
 - Joblib
 - OpenPyXL
+- Streamlit
 - Jupyter Notebook
 - VS Code
 
@@ -213,6 +215,7 @@ Customers using technical support and security-related services tend to remain w
 │   ├── Model_Performance_Accuracy.png
 │   └── Mutual_information_plot.png
 ├── .gitignore
+├── app.py
 ├── Project_notebook.ipynb
 ├── churn-prediction.pbix
 ├── powerbi_churn_predictions.csv
@@ -261,6 +264,21 @@ pip install -r requirements.txt
 jupyter notebook
 ```
 
+### Run Streamlit App
+
+The project includes an interactive web app built with **Streamlit** that lets you make real-time churn predictions through a clean form interface.
+
+```bash
+streamlit run app.py
+```
+
+The app loads a trained model bundle (`Toolkit/ChurnPredictor.joblib`) and provides:
+
+- **Customer Information** inputs — Senior Citizen status, Partner/Dependents, Internet Service type, add-on services, Contract type, Payment Method
+- **Account Charges** — Tenure, Monthly Charges, Total Charges
+- **Prediction Results** — Churn/Stay classification with confidence scores and probability breakdown
+- **Model Input Viewer** — Expandable dataframe showing the exact feature vector sent to the model
+
 ---
 
 ## Learning Outcomes
@@ -275,6 +293,7 @@ Through this project, I gained hands-on experience in:
 - Model Evaluation
 - Hyperparameter Tuning
 - Business-Oriented Data Interpretation
+- Deploying ML models with Streamlit
 
 ---
 
