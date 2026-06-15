@@ -4,6 +4,18 @@
 
 Customer retention is a critical challenge for subscription-based businesses. This project focuses on predicting customer churn for a telecommunications company using supervised machine learning techniques.
 
+---
+
+## Live Demos
+
+[![Streamlit App](https://img.shields.io/badge/Streamlit-Live%20Demo-FF4B4B)](https://customer-churn-prediction-atul.streamlit.app/)
+[![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-F2C811)](https://github.com/OAtulA/customer-churn-prediction/blob/main/churn-prediction.pbix)
+
+- **Interactive ML App:** [customer-churn-prediction-atul.streamlit.app](https://customer-churn-prediction-atul.streamlit.app/) — make real-time churn predictions in your browser
+- **Power BI Dashboard:** [churn-prediction.pbix](https://github.com/OAtulA/customer-churn-prediction/blob/main/churn-prediction.pbix) — download and open in Power BI Desktop to explore the full dashboard
+
+---
+
 The objective is to identify customers who are likely to leave the service, enabling businesses to take proactive retention measures and improve customer satisfaction.
 
 ---
@@ -26,7 +38,7 @@ Customer churn directly impacts revenue and growth. By analyzing customer demogr
 
 ## Technologies Used
 
-![Python](https://img.shields.io/badge/Python-3.13-blue)
+![Python](https://img.shields.io/badge/Python-3.11-blue)
 ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML-orange)
 ![Streamlit](https://img.shields.io/badge/Streamlit-Web%20App-FF4B4B)
 ![XGBoost](https://img.shields.io/badge/XGBoost-Classifier-green)
@@ -228,14 +240,14 @@ Customers using technical support and security-related services tend to remain w
 ### Clone Repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/OAtulA/customer-churn-prediction
 cd customer-churn-prediction
 ```
 
 ### Create Virtual Environment
 
 ```bash
-python -m venv venv
+python3.11 -m venv venv
 ```
 
 ### Activate Environment
@@ -264,7 +276,7 @@ pip install -r requirements.txt
 jupyter notebook
 ```
 
-### Run Streamlit App
+### Run Streamlit App Locally
 
 The project includes an interactive web app built with **Streamlit** that lets you make real-time churn predictions through a clean form interface.
 
